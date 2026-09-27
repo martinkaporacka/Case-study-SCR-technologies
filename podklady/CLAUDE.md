@@ -40,6 +40,41 @@ chyba, povedz to a opytaj sa; nevymyslaj.
 6. **Pred publikovanim citlivych veci pytaj.** Konkretne klientske cisla,
    mena ludi, NDA veci — over s marketerom/Lubosom.
 
+## Styl pravidla ziskane z praxe (Galia, Mollvero) — drz ich vzdy
+
+Tieto pravidla vznikli postupnym ladenim s marketerom na realnych case studies.
+Plati automaticky pre kazdu dalsiu case study, aj ked to marketer znova nespomenie:
+
+1. **Nazvy systemov presne.** Vzdy "Helios ERP" (nie len "Helios"). Vzdy
+   "integracia" / "integrovany" (nie "prepojenie" / "napojenie" / "prepojeny").
+2. **Max 5 kratkych pomlciek (–) na celu case study.** Zvysok pisat ako
+   suvisle, nadvazujuce vety — nie vypocty oddelene pomlckou. Dvojbodky
+   v beznom texte tiez minimalizovat (rozdel na kratsie vety alebo pouzi
+   ciarku), okrem prirodzenych miest (napr. "Fact box: Klient: ...").
+3. **Ziadne marketingove barlicky.** Pisat polopate a konkretne — namiesto
+   "bez toho aby pribudala rucna praca" napisat presne CO to znamena
+   (napr. "bez toho aby sa musel nanovo pisat kod a minat penaze").
+4. **Testimonialy = pozvanka, nie vymysleny citat.** Ked chyba realna
+   referencia, napis prazdny box s pozvankou klientovi napisat vlastnu
+   recenziu/testimonial (co vsetko moze spomenut — spolupracu, komunikaciu,
+   dodrzanie terminov a pod.), NIKDY nevymyslaj citat s menom.
+5. **Cisla len z overenych podkladov** — plati aj retroaktivne: ked klient
+   spomenie cislo v case study, over ho oproti zdrojovemu briefu/researchu
+   skor nez ho prijmes ako fakt.
+6. **Popisuj presne, co firma urobila — nie viac.** Ak SCR technologies
+   integrovala/napojila existujuci nastroj (napr. 3D konfigurator tretej
+   strany) do webu/portalu, nikdy nepisat, ze sme ten nastroj "postavili"
+   alebo "vyvinuli" — presne rozlisovat "postavili sme X a integrovali X
+   s Y" od "vyvinuli sme Y".
+7. **Dizajn:** SCR brand identita, akcentova farba ako vzor Travitor
+   (oranzova), prepisovatelna cez 7 CSS premennych `--accent*` v `<style>`.
+8. **Self-contained HTML vystup.** Hlavny "na poslanie" subor musi mat
+   VSETKY obrazky vlozene priamo ako base64 (funguje ako jeden subor bez
+   priecinka assets/, otvoritelny dvojklikom kdekolvek). Samostatnu
+   "pracovnu" verziu s obrazkami ako externe subory v assets/ (kvoli
+   jednoduchym buducim upravam) drz len ako DOPLNKOVU kopiu navyse,
+   nikdy namiesto self-contained verzie.
+
 ## Co v tomto baliku NIE je (a netreba)
 Financie, marze, cashflow, pipeline, ceny, hodinovky, interne statusy
 produktov, mena obchodnikov. To su interne veci a do verejneho obsahu
