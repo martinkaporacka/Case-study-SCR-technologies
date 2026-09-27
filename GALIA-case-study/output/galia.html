@@ -8,11 +8,11 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 <noscript><style>.reveal{opacity:1 !important;transform:none !important;}</style></noscript>
-<style>
-/* ============================================================
-   blocks.css — zdielany dizajnovy system pre case study bloky
-   (verne prevzate zo scrweb appky: components/blocks/blocks.css)
-   Scopovane pod .cs-page (je na <body class="cs-page">).
+<style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style>
+</head>
+<body class="cs-page">
+
+).
    ============================================================ */
 .cs-page *, .cs-page *::before, .cs-page *::after { box-sizing: border-box; }
 
@@ -168,8 +168,8 @@ body { margin: 0; }
 .cs-page .img-slider-wrap { display: flex; align-items: center; gap: 20px; padding: 0 48px; margin-top: 48px; position: relative; }
 .cs-page .slider-viewport { flex: 1; overflow: hidden; }
 .cs-page .slider-track { display: flex; gap: 16px; transition: transform 0.45s cubic-bezier(0.65, 0, 0.35, 1); }
-.cs-page .slider-slide { flex: 0 0 calc(33.333% - 11px); aspect-ratio: 16/10; overflow: hidden; background: #1a1a1a; box-shadow: 0 12px 40px -12px rgba(0,0,0,0.5); }
-.cs-page .slider-slide img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cs-page .slider-slide { flex: 0 0 calc(33.333% - 11px); aspect-ratio: 16/10; overflow: hidden; background: #ffffff; box-shadow: 0 12px 40px -12px rgba(0,0,0,0.5); }
+.cs-page .slider-slide img { width: 100%; height: 100%; object-fit: contain; display: block; }
 .cs-page .slider-btn { flex-shrink: 0; width: 44px; height: 44px; border-radius: 50%; border: 1.5px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.08); color: #fff; display: flex; align-items: center; justify-content: center; cursor: pointer; transition: background 0.2s, border-color 0.2s, transform 0.2s, opacity 0.2s; }
 .cs-page .slider-btn:disabled { opacity: 0.3; cursor: default; }
 .cs-page .slider-btn:not(:disabled):hover { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.4); transform: scale(1.08); }
@@ -267,6 +267,7 @@ body { margin: 0; }
 .cs-page .bp-section h2 { font-size: clamp(28px, 3vw, 42px); font-weight: 700; letter-spacing: -1.5px; line-height: 1.1; color: var(--cs-white); margin-top: 12px; margin-bottom: 20px; }
 .cs-page .bp-section h2 em { font-style: normal; color: var(--accent); }
 .cs-page .bp-intro p { font-size: 15px; color: rgba(255,255,255,.5); line-height: 1.65; margin: 0 0 8px; }
+.cs-page .bp-intro p strong { color: inherit; }
 .cs-page .bp-timeline { display: flex; align-items: flex-start; gap: 0; position: relative; }
 .cs-page .bp-step { display: flex; align-items: flex-start; flex: 1; min-width: 0; }
 .cs-page .bp-connector { flex-shrink: 0; width: 32px; height: 1px; background: linear-gradient(90deg, rgba(var(--accent-rgb),.35), rgba(var(--accent-rgb),.1)); margin-top: 20px; }
@@ -301,7 +302,7 @@ body { margin: 0; }
 /* ── MEDIA (realne obrazky/video) ── */
 .cs-page .hero-logo { height: 48px; width: auto; display: block; margin-bottom: 28px; max-width: 240px; object-fit: contain; }
 .cs-page .video-wrapper video { display: block; width: 100%; height: auto; }
-.cs-page .video-mockup-screen img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cs-page .video-mockup-screen img { width: 100%; height: 100%; object-fit: contain; display: block; }
 
 /* ── PLACEHOLDER (kym nie su realne obrazky/video v assets/) ── */
 .cs-page .ph { width: 100%; height: 100%; min-height: 150px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 16px; font-size: 11px; letter-spacing: 0.4px; color: var(--cs-gray-500); font-family: ui-monospace, Menlo, monospace; background: repeating-linear-gradient(45deg, rgba(0,0,0,0.015), rgba(0,0,0,0.015) 10px, rgba(0,0,0,0.04) 10px, rgba(0,0,0,0.04) 20px); border: 1px dashed var(--cs-gray-300); }
@@ -338,13 +339,13 @@ body { margin: 0; }
   <div class="hero-grid"></div>
   <div class="hero-noise"></div>
   <div class="hero-content">
-    <img class="hero-logo reveal" src="assets/galia-logo.png" alt="Galia" />
+    <img class="hero-logo reveal" src="assets/galia-01-galia.png" alt="Galia" />
     <div class="hero-tags">
       <span class="hero-tag">Výroba a priemysel</span>
       <span class="hero-tag hero-tag-product">Digitálny B2B a B2C portál</span>
     </div>
     <h1 class="reveal">Od ručne zadávaných objednávok<br/>k <em>modernému B2B predaju</em></h1>
-    <p class="hero-sub reveal reveal-delay-1">Postavili sme Galii B2B portál prepojený s ich systémom Helios. Partneri si objednávajú sami cez internet, všetko majú na jednom mieste — a firma má základ na to, aby rástla do ďalších krajín.</p>
+    <p class="hero-sub reveal reveal-delay-1">Postavili sme Galii B2B portál integrovaný s ich systémom Helios ERP. Partneri si objednávajú sami cez internet, všetko majú na jednom mieste a firma má základ na to, aby rástla do ďalších krajín.</p>
     <div class="hero-metrics">
       <div class="metric-item reveal"><div class="metric-value"><span data-count="30">30</span><sup>+</sup></div><div class="metric-label">rokov na trhu</div></div>
       <div class="metric-item reveal"><div class="metric-value"><span data-count="18">18</span></div><div class="metric-label">krajín exportu</div></div>
@@ -361,18 +362,18 @@ body { margin: 0; }
       <div class="reveal">
         <span class="section-tag">O projekte</span>
         <h2>Slovenský líder,<br/>ktorý <em>zdigitalizoval predaj</em></h2>
-        <p>Galia je slovenským lídrom vo výrobe ťažných zariadení. Za viac než 30 rokov si vybudovala silnú pozíciu — vlastný vývoj, ekologickú výrobu na Slovensku a predaj do 18 krajín. Je oficiálnym dodávateľom pre značky Citroën, Fiat, Peugeot a KIA.</p>
-        <p>Pre Galiu sme navrhli a postavili <strong>B2B portál prepojený s ich systémom Helios</strong>. Toto riešenie firme prináša hneď niekoľko vecí: partneri si objednávajú sami kedykoľvek, aktuálne ceny aj sklad vidia okamžite, objednávky prichádzajú bez chýb a firma má pevný základ na to, aby rástla do ďalších krajín.</p>
+        <p>Galia je slovenským lídrom vo výrobe ťažných zariadení. Za viac než 30 rokov si vybudovala silnú pozíciu – vlastný vývoj, ekologickú výrobu na Slovensku a predaj do 18 krajín. Je oficiálnym dodávateľom pre značky Citroën, Fiat, Peugeot a KIA.</p>
+        <p>Pre Galiu sme navrhli a postavili <strong>B2B portál integrovaný s ich systémom Helios ERP</strong>. Toto riešenie firme prináša hneď niekoľko vecí: partneri si objednávajú sami kedykoľvek, aktuálne ceny aj sklad vidia okamžite, objednávky prichádzajú bez chýb a firma má pevný základ na to, aby rástla do ďalších krajín.</p>
       </div>
       <div class="reveal reveal-delay-1">
-        <div class="client-badge"><span class="client-dot"></span>B2B portál prepojený so systémom Helios</div>
+        <div class="client-badge"><span class="client-dot"></span>B2B portál integrovaný so systémom Helios ERP</div>
         <div class="meta-grid">
           <div class="meta-item"><div class="meta-label">Klient</div><div class="meta-value">GALIA SLOVAKIA s.r.o., Vlachy</div></div>
           <div class="meta-item"><div class="meta-label">Odvetvie</div><div class="meta-value">Výroba · ťažné zariadenia</div></div>
           <div class="meta-item"><div class="meta-label">Trh</div><div class="meta-value">Slovensko + 18 krajín exportu</div></div>
-          <div class="meta-item"><div class="meta-label">Naša rola</div><div class="meta-value">Návrh, dizajn, vývoj, prepojenie</div></div>
+          <div class="meta-item"><div class="meta-label">Naša rola</div><div class="meta-value">Návrh, dizajn, vývoj, integrácia</div></div>
           <div class="meta-item"><div class="meta-label">Riešenie</div><div class="meta-value">Digitálny B2B a B2C portál</div></div>
-          <div class="meta-item"><div class="meta-label">Prepojenie</div><div class="meta-value">Systém Helios</div></div>
+          <div class="meta-item"><div class="meta-label">Integrácia</div><div class="meta-value">Systém Helios ERP</div></div>
         </div>
       </div>
     </div>
@@ -386,17 +387,17 @@ body { margin: 0; }
       <div class="challenge-left reveal">
         <span class="section-tag">Výzva</span>
         <h2>Rast, ktorý <em>brzdila ručná práca</em></h2>
-        <p>Galia mala skvelý produkt aj záujem zo zahraničia. Problém bol v tom, ako vznikali objednávky — cez telefón, e-maily a ručné prepisovanie do systému. Každá objednávka tak zabrala veľa času, ľahko sa pri nej spravila chyba a nikto nemal poriadny prehľad. A čím viac firma rástla, tým väčšia záťaž to bola.</p>
-        <div class="challenge-quote"><p>Rozhodnutie bolo jasné: namiesto vylepšovania starého spôsobu postaviť jeden portál, kde partneri aj samotná firma nájdu všetko na jednom mieste.</p></div>
+        <p>Galia mala skvelý produkt aj záujem zo zahraničia. Problém bol v tom, ako vznikali objednávky – cez telefón, e-maily a ručné prepisovanie do systému. Každá objednávka tak zabrala veľa času, ľahko sa pri nej spravila chyba a nikto nemal poriadny prehľad. A čím viac firma rástla, tým väčšia záťaž to bola.</p>
+        <div class="challenge-quote"><p>[Toto je priestor pre vaše vyjadrenie. Napíšte nám, prečo ste sa rozhodli spolupracovať práve s nami a čo na spolupráci oceňujete. Uvítame citáciu kolegu, ktorý bol pri projekte od začiatku.]</p></div>
         <a href="#kontakt" class="cta-btn challenge-cta">Rezervovať bezplatnú konzultáciu <span>&rarr;</span></a>
       </div>
       <div class="reveal reveal-delay-1">
         <ul class="pain-list">
-          <li><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="pain-text"><strong>Objednávky cez telefón a e-mail</strong><span>Každú objednávku bolo treba ručne spísať a prepísať do systému — pomaly a ľahko sa pri tom pomýlilo.</span></div></li>
+          <li><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.33 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div><div class="pain-text"><strong>Objednávky cez telefón a e-mail</strong><span>Každú objednávku bolo treba ručne spísať a prepísať do systému. Bolo to pomalé a ľahko sa pri tom pomýlilo.</span></div></li>
           <li><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="pain-text"><strong>Čas navyše namiesto predaja</strong><span>Ľudia trávili čas prepisovaním objednávok namiesto toho, aby sa venovali zákazníkom a predaju.</span></div></li>
           <li><div class="pain-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></div><div class="pain-text"><strong>Ťažší rast do zahraničia</strong><span>Bez online objednávania sa firme len ťažko získavali a obsluhovali partneri v iných krajinách.</span></div></li>
-          <li><div class="pain-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div class="pain-text"><strong>Údaje na viacerých miestach</strong><span>Produkty, ceny a sklad boli oddelene od objednávok, takže sa ľahko rozchádzali a neboli aktuálne.</span></div></li>
-          <li><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div><div class="pain-text"><strong>Partneri si nevedeli pomôcť sami</strong><span>Nemali ako si pozrieť sklad, spraviť objednávku či stiahnuť faktúru — museli volať alebo písať.</span></div></li>
+          <li><div class="pain-icon"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></div><div class="pain-text"><strong>Údaje na viacerých miestach</strong><span>Všetky produkty, ceny aj skladové dostupnosti sú teraz koncentrované na jedno miesto, kde sú individuálne zobrazené partnerom na základe ich obchodných podmienok.</span></div></li>
+          <li><div class="pain-icon"><svg viewBox="0 0 24 24"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg></div><div class="pain-text"><strong>Partneri si nevedeli pomôcť sami</strong><span>Nemali ako si pozrieť sklad, spraviť objednávku či stiahnuť faktúru, a tak museli volať alebo písať.</span></div></li>
         </ul>
       </div>
     </div>
@@ -410,16 +411,16 @@ body { margin: 0; }
       <div class="approach-header-text reveal">
         <span class="section-tag">Strategický prístup</span>
         <h2>Nezačali sme webom.<br/>Najprv sme <em>pochopili predaj.</em></h2>
-        <p>Skôr než sme čokoľvek programovali, poriadne sme si prešli, ako Galia predáva — od prvej otázky partnera až po faktúru. Až potom sme portál navrhli tak, aby zvládol viac krajín aj produktov a aby sa v ňom nič nemuselo prepisovať ručne.</p>
+        <p>Skôr než sme čokoľvek programovali, poriadne sme si prešli, ako Galia predáva – od prvej otázky klienta až po faktúru. Portál sme potom zostavili presne podľa tejto cesty. Vďaka tomu sme na nič nezabudli a každý krok v portáli zodpovedá tomu, čo klient pri nákupe naozaj potrebuje. Zároveň sme ho postavili tak, aby Galia mohla v budúcnosti predávať aj do ďalších krajín a pridávať nové produkty bez prerábania portálu a bez toho, aby niekto musel objednávky či ceny prepisovať do systému ručne.</p>
       </div>
       <a href="#kontakt" class="cta-btn approach-cta reveal">Rezervovať bezplatnú konzultáciu <span>&rarr;</span></a>
     </div>
     <div class="approach-grid">
-      <div class="approach-card reveal"><div class="approach-number">01 — Analýza</div><h3>Najprv pochopiť, potom stavať</h3><p>Prešli sme si celý predaj — od otázky partnera po faktúru — a našli miesta, kde sa strácal čas a robili chyby.</p></div>
-      <div class="approach-card reveal reveal-delay-1"><div class="approach-number">02 — Dizajn</div><h3>Jednoduché a prehľadné</h3><p>Portál sme navrhli tak, aby v ňom partner hneď našiel správne zariadenie, elektroinštaláciu aj cenu — bez toho, aby musel volať.</p></div>
-      <div class="approach-card reveal reveal-delay-2"><div class="approach-number">03 — Základ na rast</div><h3>Pripravené na rast</h3><p>Portál je prepojený so systémom Helios a postavený tak, aby zvládol viac krajín, jazykov aj produktov — bez toho, aby pribúdala ručná práca.</p></div>
+      <div class="approach-card reveal"><div class="approach-number">01 · Analýza</div><h3>Najprv pochopiť, potom stavať</h3><p>Prešli sme si celý proces fungovania predaja - od prvého kontaktu s partnerom až po zaslanie objednávkovej faktúry.</p></div>
+      <div class="approach-card reveal reveal-delay-1"><div class="approach-number">02 · Dizajn</div><h3>Jednoduché a prehľadné</h3><p>Portál sme navrhli tak, aby v ňom partner hneď našiel správne zariadenie, elektroinštaláciu aj cenu bez toho, aby musel volať.</p></div>
+      <div class="approach-card reveal reveal-delay-2"><div class="approach-number">03 · Expanzia</div><h3>Pripravené na expanziu</h3><p>B2B portál je navrhnutý tak, aby Galia mohla jednoducho rozširovať predaj na ďalšie zahraničné trhy. Nové jazykové mutácie a lokálne obchodné nastavenia je možné dopĺňať bez potreby budovať samostatné riešenie pre každú krajinu. Produkty, ceny, dostupnosť aj objednávky pritom zostávajú napojené na centrálne ERP.</p></div>
     </div>
-    <p class="section-closer reveal">Vďaka týmto trom krokom má dnes firma aj jej partneri <em>všetko potrebné na jednom mieste.</em></p>
+    <p class="section-closer reveal">Výsledkom je portál integrovaný so systémom Helios ERP, kde si klient zadá objednávku, nájde svoje faktúry a <em>vybaví všetko na jednom mieste.</em></p>
   </div>
 </section>
 
@@ -428,24 +429,23 @@ body { margin: 0; }
   <div class="image-grid-head reveal">
     <span class="section-tag">Portál v akcii</span>
     <h2>Pohľad <em>do portálu</em></h2>
-    <p>Reálne obrazovky, ktoré partneri Galie používajú každý deň — od katalógu až po správu objednávok.</p>
+    <p>Reálne obrazovky, ktoré partneri Galie používajú každý deň, od katalógu až po správu objednávok.</p>
   </div>
   <div class="img-slider-wrap reveal">
     <button class="slider-btn slider-btn--prev" aria-label="Predchádzajúci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg></button>
     <div class="slider-viewport">
       <div class="slider-track">
-        <div class="slider-slide"><div class="ph">Obrazok: katalog produktov (assets/galia-katalog.png)</div></div>
-        <div class="slider-slide"><div class="ph">Obrazok: detail zariadenia (assets/galia-produkt.png)</div></div>
-        <div class="slider-slide"><div class="ph">Obrazok: konfiguracia objednavky (assets/galia-objednavka.png)</div></div>
-        <div class="slider-slide"><div class="ph">Obrazok: kosik a cennik (assets/galia-kosik.png)</div></div>
-        <div class="slider-slide"><div class="ph">Obrazok: dashboard partnera (assets/galia-dashboard.png)</div></div>
-        <div class="slider-slide"><div class="ph">Obrazok: faktury a objednavky (assets/galia-faktury.png)</div></div>
+        
+        <div class="slider-slide"><img src="assets/galia-02-detail-a-n-ho-zariadenia-s-parametrami-a.png" alt="Detail ťažného zariadenia s parametrami a kompatibilitou"></div>
+        <div class="slider-slide"><img src="assets/galia-03-n-kupn-ko-k-v-port-li-galia.png" alt="Nákupný košík v portáli Galia"></div>
+        <div class="slider-slide"><img src="assets/galia-04-detail-objedn-vky-so-stavom-polo-kami-a-.png" alt="Detail objednávky so stavom, položkami a fakturačnými údajmi"></div>
+        <div class="slider-slide"><img src="assets/galia-05-zoznam-fakt-r-so-stavom-hrad.png" alt="Zoznam faktúr so stavom úhrad"></div>
       </div>
     </div>
     <button class="slider-btn slider-btn--next" aria-label="Nasledujúci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg></button>
   </div>
   <div class="slider-dots"></div>
-  <div class="closer-wrap"><p class="section-closer reveal">Ukážka z <em>katalógu, objednávok a partnerskej zóny</em> — tak, ako to vidia partneri Galie.</p></div>
+  <div class="closer-wrap"><p class="section-closer reveal">Ukážka z <em>katalógu, objednávok a partnerskej zóny</em> tak, ako to vidia partneri Galie.</p></div>
 </section>
 
 <!-- ════════════════ 6. SOLUTION — Riesenie ════════════════ -->
@@ -453,18 +453,18 @@ body { margin: 0; }
   <div class="container">
     <div class="reveal" style="max-width:680px">
       <span class="section-tag">Riešenie</span>
-      <h2>Jeden portál, <em>prepojený so systémom Helios</em></h2>
-      <p>Galia dnes nevybavuje objednávky cez e-maily. Má portál, kde si partneri objednávajú sami — a ceny, sklad aj objednávky sa automaticky prepisujú do systému Helios a späť.</p>
+      <h2>Jeden portál, <em>integrovaný so systémom Helios ERP</em></h2>
+      <p>Galia má portál, kde si partneri objednávajú sami. Ceny produktov aj skladové zásoby sa pravidelne a automaticky synchronizujú so systémom Helios ERP, takže dáta sú vždy aktuálne.</p>
     </div>
     <div class="solution-grid">
       <div class="reveal solution-left">
         <h3>Čo portál umožňuje</h3>
         <ul class="feature-list">
-          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Prepojený so systémom Helios</strong><span>Ceny a sklad sa aktualizujú samy — nikto ich už neprepisuje ručne.</span></div></li>
-          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Prehľadné a jednoduché</strong><span>Partner v portáli hneď nájde to, čo hľadá.</span></div></li>
-          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Automatické priradenie</strong><span>K ťažnému zariadeniu portál sám ponúkne správnu elektroinštaláciu.</span></div></li>
-          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Samoobsluha 24/7</strong><span>Partneri si sami spravia objednávku a stiahnu faktúru — kedykoľvek, aj cez víkend.</span></div></li>
-          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Pripravené na zahraničie</strong><span>Portál je v rôznych jazykoch a zvládne aj predaj do ďalších krajín.</span></div></li>
+          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Integráciu so systémom Helios ERP</strong><span>Ceny a sklad sa aktualizujú samy – nikto ich už neprepisuje ručne.</span></div></li>
+          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Prehľadnosť a jednoduchosť</strong><span>Partner v portáli hneď nájde to, čo hľadá.</span></div></li>
+          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Automatický návrh elektroinštalácie</strong><span>K ťažnému zariadeniu portál sám navrhne tú správnu.</span></div></li>
+          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Samoobsluhu 24/7</strong><span>Partneri si sami spravia objednávku a stiahnu faktúru kedykoľvek, aj cez víkend.</span></div></li>
+          <li><div class="feature-check"><svg viewBox="0 0 24 24" style="width:14px;height:14px;stroke:currentColor;stroke-width:2.5;fill:none;stroke-linecap:round;stroke-linejoin:round"><polyline points="20 6 9 17 4 12"/></svg></div><div><strong>Predaj do zahraničia</strong><span>Súčasťou finálneho riešenia bude aj jazyková mutácia, na ktorej už pracujeme, aby portál zvládol predaj do ďalších krajín.</span></div></li>
         </ul>
         <a href="#kontakt" class="cta-btn solution-cta">Rezervovať bezplatnú konzultáciu <span>&rarr;</span></a>
       </div>
@@ -478,13 +478,13 @@ body { margin: 0; }
             <div class="module-tag"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg></span>Faktúry</div>
             <div class="module-tag"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H5.17L4 17.17V4z"/><line x1="8" y1="9" x2="16" y2="9"/></svg></span>Elektroinštalácie</div>
             <div class="module-tag"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Partnerská zóna</div>
-            <div class="module-tag"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>Jazykové verzie</div>
+            <div class="module-tag"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg></span>Jazykové verzie (pripravujeme)</div>
             <div class="module-tag"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></span>Prehľad pre partnera</div>
           </div>
         </div>
         <div style="margin-top:36px">
-          <h3>Prepojenie so systémom Helios</h3>
-          <p style="margin-bottom:16px;font-size:15px">Portál si automaticky vymieňa údaje so systémom Helios, takže firma aj partneri vidia stále tie isté a aktuálne informácie.</p>
+          <h3>Integrácia so systémom Helios ERP</h3>
+          <p style="margin-bottom:16px;font-size:15px">Portál automaticky preberá údaje zo systému Helios ERP, takže firma aj partneri vidia stále tie isté a aktuálne informácie.</p>
           <div class="module-grid">
             <div class="module-tag"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></span>Produkty</div>
             <div class="module-tag"><span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>Zásoby</div>
@@ -500,15 +500,15 @@ body { margin: 0; }
       <div class="showcase-heading reveal"><h3>Portál v akcii</h3><p>Tri pohľady na to, čo portál Galie každý deň robí pre jej partnerov.</p></div>
       <div class="showcase-grid">
         <div class="showcase-item reveal">
-          <div class="video-mockup-frame"><div class="video-mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url">galia.sk / b2b / katalog</div></div><div class="video-mockup-screen"><div class="ph">Obrazok: katalog (assets/galia-katalog.png)</div></div></div>
-          <div class="showcase-caption"><strong>Katalóg a vyhľadávanie <span class="pill">Katalóg</span></strong><span>Partner nájde ťažné zariadenie podľa auta — aj s cenou a dostupnosťou hneď.</span></div>
+          <div class="video-mockup-frame"><div class="video-mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url">galia.sk / b2b / katalog</div></div><div class="video-mockup-screen"><img src="assets/galia-06-katal-g-produktov-v-port-li-galia.png" alt="Katalóg produktov v portáli Galia"></div></div>
+          <div class="showcase-caption"><strong>Katalóg a vyhľadávanie <span class="pill">Katalóg</span></strong><span>Partner nájde ťažné zariadenie podľa auta, hneď aj s cenou a dostupnosťou.</span></div>
         </div>
         <div class="showcase-item reveal reveal-delay-1">
-          <div class="video-mockup-frame"><div class="video-mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url">galia.sk / b2b / objednavka</div></div><div class="video-mockup-screen"><div class="ph">Obrazok: objednavka (assets/galia-objednavka.png)</div></div></div>
-          <div class="showcase-caption"><strong>Zostavenie objednávky <span class="pill">Objednávky</span></strong><span>Portál sám priradí správnu elektroinštaláciu, takže v objednávke nevznikne chyba.</span></div>
+          <div class="video-mockup-frame"><div class="video-mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url">galia.sk / b2b / objednavka</div></div><div class="video-mockup-screen"><img src="assets/galia-07-poklad-a-so-zostaven-m-objedn-vky-a-elek.png" alt="Pokladňa so zostavením objednávky a elektroinštaláciou"></div></div>
+          <div class="showcase-caption"><strong>Zostavenie objednávky <span class="pill">Objednávky</span></strong><span>Portál sám navrhne správnu elektroinštaláciu, takže v objednávke nevznikne chyba.</span></div>
         </div>
         <div class="showcase-item reveal reveal-delay-2">
-          <div class="video-mockup-frame"><div class="video-mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url">galia.sk / b2b / zona</div></div><div class="video-mockup-screen"><div class="ph">Obrazok: partnerska zona (assets/galia-zona.png)</div></div></div>
+          <div class="video-mockup-frame"><div class="video-mockup-bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><div class="url">galia.sk / b2b / zona</div></div><div class="video-mockup-screen"><img src="assets/galia-08-preh-ad-partnera-s-fakt-rami-a-objedn-vk.png" alt="Prehľad partnera s faktúrami a objednávkami"></div></div>
           <div class="showcase-caption"><strong>Partnerská zóna <span class="pill">Samoobsluha</span></strong><span>Objednávky aj faktúry na jednom mieste, dostupné kedykoľvek.</span></div>
         </div>
       </div>
@@ -522,18 +522,18 @@ body { margin: 0; }
     <div class="reveal" style="max-width:680px">
       <span class="section-tag">Technológia</span>
       <h2>Postavené na <em>pevných základoch</em></h2>
-      <p>Portál sme stavali tak, aby bol spoľahlivý, rýchly, dal sa rozširovať do ďalších krajín a aby Galia nebola závislá od jedného dodávateľa.</p>
+      <p>Portál sme stavali tak, aby bol spoľahlivý, rýchly, dal sa rozširovať do ďalších krajín.</p>
     </div>
     <div class="tech-grid">
-      <div class="tech-pill reveal"><div class="tech-icon"><svg viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></div><div class="tech-cat">Prepojenie</div><div class="tech-name">Spojenie so systémom Helios</div><div class="tech-why">Produkty, ceny, sklad aj objednávky si portál a Helios vymieňajú automaticky.</div></div>
-      <div class="tech-pill reveal reveal-delay-1"><div class="tech-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><div class="tech-cat">Základ</div><div class="tech-name">Pripravené na rast</div><div class="tech-why">Portál zvládne viac krajín, jazykov aj produktov bez toho, aby pribúdala ručná práca.</div></div>
-      <div class="tech-pill reveal reveal-delay-2"><div class="tech-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="tech-cat">Bezpečnosť</div><div class="tech-name">Chránené údaje partnerov</div><div class="tech-why">Každý partner vidí len svoje veci a jeho objednávky aj faktúry sú v bezpečí.</div></div>
-      <div class="tech-pill reveal reveal-delay-3"><div class="tech-icon"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div><div class="tech-cat">Nezávislosť</div><div class="tech-name">Bez závislosti od dodávateľa</div><div class="tech-why">Riešenie ostáva pod kontrolou Galie — nie je uzamknuté na jednu firmu.</div></div>
+      <div class="tech-pill reveal"><div class="tech-icon"><svg viewBox="0 0 24 24"><path d="M20 7h-9"/><path d="M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg></div><div class="tech-cat">Integrácia</div><div class="tech-name">Spojenie so systémom Helios ERP</div><div class="tech-why">Ceny produktov a skladové zásoby sa zo systému Helios ERP synchronizujú pravidelne a automaticky, takže dáta sú vždy aktuálne.</div></div>
+      <div class="tech-pill reveal reveal-delay-1"><div class="tech-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg></div><div class="tech-cat">Základ</div><div class="tech-name">Pripravené na rast</div><div class="tech-why">Portál zvládne viac krajín, jazykov aj produktov bez toho, aby sa musel nanovo písať kód a míňať peniaze na prerábanie.</div></div>
+      <div class="tech-pill reveal reveal-delay-2"><div class="tech-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><div class="tech-cat">Bezpečnosť</div><div class="tech-name">Chránené údaje partnerov</div><div class="tech-why">Každý partner má vlastný prístup a vidí iba svoje objednávky, faktúry a ceny.</div></div>
+      <div class="tech-pill reveal reveal-delay-3"><div class="tech-icon"><svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg></div><div class="tech-cat">Jednorazová investícia</div><div class="tech-name">Beží bez ďalších výdavkov</div><div class="tech-why">Portál je navrhnutý tak, aby na bežné fungovanie nepotreboval ďalšie náklady na správu či úpravy.</div></div>
     </div>
     <div class="tech-foot">
-      <div class="tech-foot-item reveal"><h4>Kvalita a spoľahlivosť</h4><p>Portál sa čisto prepája so systémom Helios a dôležité veci, ako objednávanie, máme overené testami, aby fungovali spoľahlivo.</p></div>
-      <div class="tech-foot-item reveal reveal-delay-1"><h4>Bezpečnosť</h4><p>Každý partner má vlastný prístup a vidí len svoje objednávky a faktúry. Údaje zostávajú pod kontrolou Galie.</p></div>
-      <div class="tech-foot-item reveal reveal-delay-2"><h4>Pod kontrolou Galie</h4><p>Staviame na overených a otvorených technológiách, takže Galia nie je závislá od jedného dodávateľa a má plnú kontrolu nad riešením.</p></div>
+      <div class="tech-foot-item reveal"><h4>Kvalita a spoľahlivosť</h4><p>Portál je čisto integrovaný so systémom Helios ERP a dôležité veci, ako objednávanie, máme overené testami, aby fungovali spoľahlivo.</p></div>
+      <div class="tech-foot-item reveal reveal-delay-1"><h4>Jednoduchá správa obsahu</h4><p>Produkty, ceny aj sklad stačí spravovať na jednom mieste v systéme Helios ERP a portál si zmeny automaticky preberie. Nič sa nemusí upravovať dvakrát.</p></div>
+      <div class="tech-foot-item reveal reveal-delay-2"><h4>Pod kontrolou Galie</h4><p>Staviame na overených a open source technológiách bez licenčných poplatkov. Celé riešenie patrí Galii a o jeho ďalšom rozvoji rozhoduje len ona.</p></div>
     </div>
     <p class="section-closer reveal">Spoľahlivý základ, ktorý firme umožní <em>rásť aj do ďalších krajín.</em></p>
   </div>
@@ -547,9 +547,9 @@ body { margin: 0; }
       <h2>Čísla, na ktorých <em>portál stavia</em></h2>
     </div>
     <div class="impact-grid">
-      <div class="impact-card accent reveal"><div class="impact-value"><span data-count="18">18</span></div><div class="impact-label">krajín, kam môže Galia predávať</div><p class="impact-desc">Portál je pripravený v rôznych jazykoch, takže firma môže osloviť partnerov v celej svojej sieti.</p></div>
-      <div class="impact-card reveal reveal-delay-1"><div class="impact-value"><span data-count="850">850</span><span class="impact-unit">+</span></div><div class="impact-label">typov v online katalógu</div><p class="impact-desc">Celá ponuka sa načítava priamo zo systému Helios a partneri ju majú kedykoľvek po ruke.</p></div>
-      <div class="impact-card reveal reveal-delay-1"><div class="impact-value"><span>24</span><span class="impact-unit">/7</span></div><div class="impact-label">objednávanie kedykoľvek</div><p class="impact-desc">Partneri si spravia objednávku aj stiahnu faktúru sami — aj mimo pracovného času.</p></div>
+      <div class="impact-card accent reveal"><div class="impact-value"><span data-count="18">18</span></div><div class="impact-label">krajín, kam môže Galia predávať</div><p class="impact-desc">Na jazykových mutáciách portálu už pracujeme, takže firma bude môcť osloviť partnerov v celej svojej sieti.</p></div>
+      <div class="impact-card reveal reveal-delay-1"><div class="impact-value"><span data-count="850">850</span><span class="impact-unit">+</span></div><div class="impact-label">typov v online katalógu</div><p class="impact-desc">Celá ponuka sa načítava priamo zo systému Helios ERP a partneri ju majú kedykoľvek po ruke.</p></div>
+      <div class="impact-card reveal reveal-delay-1"><div class="impact-value"><span>24</span><span class="impact-unit">/7</span></div><div class="impact-label">objednávanie kedykoľvek</div><p class="impact-desc">Partneri si spravia objednávku aj stiahnu faktúru sami, aj mimo pracovného času.</p></div>
       <div class="impact-card reveal reveal-delay-2"><div class="impact-value"><span data-count="10">10</span><span class="impact-unit">mil. €</span></div><div class="impact-label">cieľový obrat firmy</div><p class="impact-desc">Online predaj je základ, ktorý má Galii pomôcť rásť na zahraničných trhoch.</p></div>
     </div>
   </div>
@@ -563,9 +563,9 @@ body { margin: 0; }
       <h2>Referencie <em>partnerov</em></h2>
     </div>
     <div class="testimonials-grid">
-      <div class="testimonial-card reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">[Placeholder — sem príde reálna citácia partnera/klienta Galia. Rozsah cca 2 vety, ~130 znakov, aby sedela do karty.]</p><div class="testimonial-author"><strong>[Meno Priezvisko]</strong><span>[pozícia] · Galia</span></div></div>
-      <div class="testimonial-card reveal reveal-delay-1"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">[Placeholder — druhá citácia. Napr. skúsenosť partnera so samoobslužným objednávaním alebo prínos ERP prepojenia.]</p><div class="testimonial-author"><strong>[Meno Priezvisko]</strong><span>[pozícia] · partner Galia</span></div></div>
-      <div class="testimonial-card reveal reveal-delay-2"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">[Placeholder — tretia citácia. Doplniť po schválení s klientom; inak tento blok vieme vynechať.]</p><div class="testimonial-author"><strong>[Meno Priezvisko]</strong><span>[pozícia] · Galia</span></div></div>
+      <div class="testimonial-card reveal"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">[Toto je priestor pre vašu spätnú väzbu a testimonial. Uvítame, ak nám ho vedia dať viacerí kolegovia z vašej firmy, ktorí s nami na projekte spolupracovali.]</p><div class="testimonial-author"><strong>[Meno Priezvisko]</strong><span>[pozícia] · Galia</span></div></div>
+      <div class="testimonial-card reveal reveal-delay-1"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">[Zamerať sa môžete napríklad na priebeh spolupráce: komunikáciu, rýchlosť reakcií, ochotu nášho tímu či to, ako sme pochopili vaše potreby a fungovanie firmy.]</p><div class="testimonial-author"><strong>[Meno Priezvisko]</strong><span>[pozícia] · Galia</span></div></div>
+      <div class="testimonial-card reveal reveal-delay-2"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">[Keďže portál ešte nie je spustený, netreba hodnotiť výsledky. Oceníme aj pohľad na dodržiavanie dohôd a termínov, návrhy riešení alebo prvé dojmy z portálu pri testovaní.]</p><div class="testimonial-author"><strong>[Meno Priezvisko]</strong><span>[pozícia] · Galia</span></div></div>
     </div>
   </div>
 </section>
@@ -578,14 +578,14 @@ body { margin: 0; }
       <h2>Viac než <em>dodávateľ webu</em></h2>
       <div class="bp-intro">
         <p>Pri Galii sme neprišli len postaviť web. Postavili sme systém, ktorý mení spôsob, akým firma predáva a rastie.</p>
-        <p>Pomohli sme s celým riešením — od pochopenia predaja, cez návrh a vzhľad portálu, až po jeho <strong>prepojenie so systémom Helios</strong>. Od prvej otázky partnera po hotovú faktúru.</p>
-        <p>Výsledkom je <strong>jedno miesto, kde má firma aj jej partneri všetko potrebné</strong> — produkty, ceny aj objednávky pokope. Galia tak má poriadok a istý základ, na ktorom môže rásť do ďalších krajín.</p>
+        <p>Pomohli sme s celým riešením – od pochopenia predaja, cez návrh a vzhľad portálu, až po jeho <strong>integráciu so systémom Helios ERP</strong>. Od prvej otázky partnera po hotovú faktúru.</p>
+        <p>Výsledkom je <strong>jedno miesto, kde má firma aj jej partneri všetko potrebné</strong>: produkty, ceny aj objednávky pokope. Galia tak má poriadok a istý základ, na ktorom môže rásť do ďalších krajín.</p>
       </div>
     </div>
     <div class="bp-timeline reveal reveal-delay-1">
-      <div class="bp-step"><div class="bp-step-inner"><div class="bp-step-num">1</div><div class="bp-step-content"><strong>Pochopili sme predaj</strong><span>Prešli sme si celý predaj — od otázky partnera po faktúru.</span></div></div></div>
+      <div class="bp-step"><div class="bp-step-inner"><div class="bp-step-num">1</div><div class="bp-step-content"><strong>Pochopili sme predaj</strong><span>Prešli sme si celý predaj od otázky partnera po faktúru.</span></div></div></div>
       <div class="bp-step"><div class="bp-connector"></div><div class="bp-step-inner"><div class="bp-step-num">2</div><div class="bp-step-content"><strong>Navrhli sme portál</strong><span>Jednoduché a prehľadné prostredie pre partnerov aj firmu.</span></div></div></div>
-      <div class="bp-step"><div class="bp-connector"></div><div class="bp-step-inner"><div class="bp-step-num">3</div><div class="bp-step-content"><strong>Prepojili sme systém Helios</strong><span>Produkty, ceny, sklad a objednávky sa prepisujú automaticky.</span></div></div></div>
+      <div class="bp-step"><div class="bp-connector"></div><div class="bp-step-inner"><div class="bp-step-num">3</div><div class="bp-step-content"><strong>Integrovali sme systém Helios ERP</strong><span>Ceny produktov a skladové zásoby sa synchronizujú automaticky.</span></div></div></div>
       <div class="bp-step"><div class="bp-connector"></div><div class="bp-step-inner"><div class="bp-step-num">4</div><div class="bp-step-content"><strong>Spustili sme samoobsluhu</strong><span>Objednávky a faktúry dostupné pre partnerov 24/7.</span></div></div></div>
       <div class="bp-step"><div class="bp-connector"></div><div class="bp-step-inner"><div class="bp-step-num">&#9733;</div><div class="bp-step-content"><strong>Základ pre rast</strong><span>Portál zvládne aj ďalšie krajiny a jazyky.</span></div></div></div>
     </div>
@@ -599,7 +599,7 @@ body { margin: 0; }
 <section class="cta-section" id="kontakt">
   <div class="cta-inner">
     <h2>Aj vás brzdí <em>ručné vybavovanie objednávok?</em></h2>
-    <p>Ak vám neporiadok v údajoch a ručná práca bránia rásť, radi vám ukážeme, ako sme to vyriešili pri Galii — a čo by to mohlo priniesť aj vám.</p>
+    <p>Ak vám neporiadok v údajoch a ručná práca bránia rásť, radi vám ukážeme, ako sme to vyriešili pri Galii a čo by to mohlo priniesť aj vám.</p>
     <a href="#kontakt" class="cta-btn">Rezervovať bezplatnú konzultáciu <span>&rarr;</span></a>
   </div>
 </section>
@@ -663,6 +663,8 @@ body { margin: 0; }
   }
 })();
 </script>
+
+
 
 </body>
 </html>
