@@ -529,9 +529,9 @@ body { margin: 0; }
       <div class="tech-pill reveal reveal-delay-3"><div class="tech-icon"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></div><div class="tech-cat">Dáta</div><div class="tech-name">S3 Storage</div><div class="tech-why">Dokumenty a prílohy firiem aj podujatí sú uložené bezpečne a škálovateľne mimo aplikačných serverov.</div></div>
     </div>
     <div class="tech-foot">
-      <div class="tech-foot-item reveal"><h4>Integrácia</h4><p>Portál je s internými systémami SARIO prepojený cez integráciu na REST API, bez manuálneho prepisovania dát.</p></div>
-      <div class="tech-foot-item reveal reveal-delay-1"><h4>Ukladanie dát</h4><p>Súbory a dokumenty sú v S3 Storage, čo zaisťuje rýchle načítanie aj pri veľkom objeme dát.</p></div>
-      <div class="tech-foot-item reveal reveal-delay-2"><h4>Prevádzka</h4><p>Aplikácia beží vo vládnom cloude, nasadenie riadi Nginx a Portainer nad Docker Swarm klastrom.</p></div>
+      <div class="tech-foot-item reveal"><h4>Integrácia</h4><p>Portál je s internými systémami SARIO integrovaný cez REST API. Vďaka tomu môžu jednotlivé systémy medzi sebou komunikovať a portál môže pracovať s aktuálnymi dátami bez vytvárania ďalších samostatných databáz či manuálnych procesov.</p></div>
+      <div class="tech-foot-item reveal reveal-delay-1"><h4>Ukladanie dát</h4><p>Súbory a dokumenty sú uložené v S3 Storage, ktoré je navrhnuté na prácu s veľkým množstvom dát. Kapacitu úložiska tak možno rozširovať spolu s tým, ako pribúdajú dokumenty a obsah portálu.</p></div>
+      <div class="tech-foot-item reveal reveal-delay-2"><h4>Prevádzka</h4><p>Aplikácia beží vo vládnom cloude a jej nasadenie riadi Nginx a Portainer nad Docker Swarm klastrom. Jednotlivé časti aplikácie je tak možné spravovať a aktualizovať samostatne, bez zásahu do celého systému.</p></div>
     </div>
     <p class="section-closer reveal">Otvorené technológie, ktoré dávajú agentúre <em>plnú kontrolu nad ďalším rozvojom.</em></p>
   </div>
